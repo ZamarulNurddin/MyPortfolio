@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Nurzamarul Islam - Personal Homepage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f9f9f9;
+        color: #333;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+      }
+      .dark-mode {
+        background-color: #1a1a1a;
+        color: #f1f1f1;
+      }
+      #theme-toggle {
+        padding: 8px 16px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      #theme-toggle:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+
+    <h1>Welcome to My Personal Homepage</h1>
+
+    <hr />
+
+    <!-- Section 1: Home -->
+    <h2>1. Home</h2>
+    <p>
+      Hello! My name is <b>Nurzamarul Islam bin Nurddin</b>. I am a Computer
+      Science (Network Computing) student at Universiti Malaysia Sarawak
+      (UNIMAS).
+    </p>
+
+    <!-- Section 2: About Me -->
+    <h2>2. About Me</h2>
+    <p>
+      I am interested in programming, technology, data structures,
+      problem-solving and computer networks. I enjoy learning new technologies
+      and improving my technical and teamwork skills.
+    </p>
+
+    <!-- Section 3: Education -->
+    <h2>3. Education</h2>
+
+    <h3>Universiti Malaysia Sarawak (UNIMAS)</h3>
+    <p>
+      Bachelor in Computer Science (Network Computing) with Honours<br />
+      2025 - Present
+    </p>
+
+    <h3>Sijil Tinggi Persekolahan Malaysia (STPM)</h3>
+    <p>2023 - 2024</p>
+
+    <!-- Section 4: Experience -->
+    <h2>4. Experience</h2>
+
+    <h3>Warehouse Crew - 99 Speed Mart Retail Holdings Berhad</h3>
+    <p>
+      Worked as a warehouse crew in 2023. My responsibilities included
+      receiving, checking, sorting and organizing stock. I also assisted with
+      stock counting, loading and unloading goods.
+    </p>
+
+    <h3>Sales Representative - Universal Traveller Shop Sdn. Bhd.</h3>
+    <p>
+      Worked as a Sales Representative from 2024 to 2025. My responsibilities
+      included assisting customers, providing product information, handling
+      sales transactions and arranging merchandise.
+    </p>
+
+    <!-- Section 5: Skills -->
+    <h2>5. Skills</h2>
+
+    <ul>
+      <li>Computer Programming</li>
+      <li>Data Structures and Algorithms</li>
+      <li>Problem-Solving</li>
+      <li>Teamwork and Collaboration</li>
+      <li>Microsoft Word</li>
+      <li>Microsoft Excel</li>
+      <li>Customer Service</li>
+      <li>Warehouse and Inventory Management</li>
+    </ul>
+
+    <!-- Section 6: Achievements -->
+    <h2>6. Achievements</h2>
+
+    <ul>
+      <li>4th Place - Top Coders Malaysia Competition</li>
+
+      <li>
+        4th Place - UNIMAS PartyRock Challenge, AWS PartyRock Generative AI
+        Challenge
+      </li>
+
+      <li>
+        Dean's List Award - Semester 1, Academic Year 2024/2025 (GPA 3.50)
+      </li>
+    </ul>
+
+    <!-- Section 7: Contact -->
+    <h2>7. Contact</h2>
+
+    <p><b>Email:</b> zamarulnurddin@gmail.com</p>
+
+    <p><b>Phone:</b> 017-2019361</p>
+
+    <hr />
+
+    <p>&copy; 2026 Nurzamarul Islam bin Nurddin</p>
+
+    <script>
+      const toggleButton = document.getElementById("theme-toggle");
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          toggleButton.textContent = "Toggle Light Mode";
+        } else {
+          toggleButton.textContent = "Toggle Dark Mode";
+        }
+      });
+    </script>
+  </body>
+</html>
